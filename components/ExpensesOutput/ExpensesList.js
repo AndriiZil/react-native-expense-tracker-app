@@ -1,8 +1,10 @@
-import { FlatList, View, Text } from 'react-native';
+import { FlatList, View } from 'react-native';
+
+import ExpenseItem from './ExpenseItem';
 
 function renderExpenseItem(itemData) {
   return (
-    <Text>{itemData.item.description}</Text>
+    <ExpenseItem {...itemData.item} />
   );
 }
 
